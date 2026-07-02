@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: payment-service-config
+data:
+  ASPNETCORE_ENVIRONMENT: "Production"
+  ConnectionStrings__Default: "Host=payments-db.internal;Port=5432;Database=payments;Username=payment_app;Password=P@ssw0rd-prod-2026"
+  ApiKey: "sk_sdkjhbwfmaeewgqwgwew4ytrwfgrheg"
